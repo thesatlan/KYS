@@ -6,6 +6,3 @@
 /build
 /captures
 .externalNativeBuild
-/app/src/main/assets/databases/*
-/scripts/pictures/*
-/app/build/*

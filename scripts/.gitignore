@@ -1,0 +1,6 @@
+*
+!.gitignore
+!make_sqlite_db.py
+!pictures_example/
+!pictures_example/*
+!pictures_example/**/*
