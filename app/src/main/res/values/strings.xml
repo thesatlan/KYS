@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">KYS</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="test">Test</string>
+    <string name="learn">Learn</string>
+
+    <string name="tests_configuration">Tests Configuration:</string>
+    <string name="question">Question:</string>
+    <string name="answers">Answers:</string>
+
+    <string name="questions_prompt">Question</string>
+    <string name="answers_prompt">Answers</string>
+    <string-array name="questions_values">
+        <item>Person Number</item>
+        <item>Person Name</item>
+        <item>Person Pictures</item>
+    </string-array>
+    <string name="login_button_text">Login</string>
+    <string name="password_hint">password</string>
+    <string name="app_password"></string>
+    <string name="next">++</string>
+    <string name="prev">--</string>
+</resources>
