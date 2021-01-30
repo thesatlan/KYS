@@ -47,8 +47,7 @@ public class LearnActivity extends AppCompatActivity {
 
         prev_button = findViewById(R.id.button_prev);
         next_button = findViewById(R.id.button_next);
-
-        new GenerateNewPersonTask().execute(1);
+        new GenerateNewPersonTask().execute(ids_and_names.keyAt(0));
     }
 
     public class GenerateNewPersonTask extends AsyncTask<Integer, Void, ArrayList<Bitmap>> {
@@ -76,7 +75,7 @@ public class LearnActivity extends AppCompatActivity {
             prev_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (current_person_number > 1) {
+                    if (current_person_number > ids_and_names.keyAt(0)) {
                         new GenerateNewPersonTask().execute(current_person_number - 1);
                     }
                 }
@@ -84,7 +83,7 @@ public class LearnActivity extends AppCompatActivity {
             next_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (current_person_number < ids_and_names.size()) {
+                    if (current_person_number < ids_and_names.keyAt(ids_and_names.size()-1)) {
                         new GenerateNewPersonTask().execute(current_person_number + 1);
                     }
                 }
